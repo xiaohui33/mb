@@ -54,7 +54,7 @@
 <body>
 <div id="main">
 
-<div class="clock" id="clock">10:27</div>
+<div class="clock" id="clock">10:30</div>
 <div class="date" id="date">11 月 10 日　星期二</div>
 <div class="hero"><table><tr><td>
   <div class="cond">主机运行状态</div>
@@ -62,25 +62,25 @@
 </td></tr></table></div>
 <div class="rule"></div>
 <table class="kv">
-  <tr><td>主进程已运行</td><td class="r">17 时 32 分</td></tr>
+  <tr><td>主进程已运行</td><td class="r">17 时 35 分</td></tr>
   <tr><td>内存占用</td><td class="r">1.5 / 3.7 GB</td></tr>
-  <tr><td>系统负载</td><td class="r">1.11 0.62 0.53</td></tr>
+  <tr><td>系统负载</td><td class="r">0.31 0.47 0.49</td></tr>
   <tr><td>磁盘</td><td class="r">1 / 29 GB</td></tr>
   <tr><td>会话数</td><td class="r">6 个</td></tr>
   <tr><td>QQ 通道</td><td class="r">正常</td></tr>
   <tr><td>组网</td><td class="r">在线</td></tr>
 </table>
 
-<div class="foot">每 10 分钟自动刷新　·　10:27</div>
+<div class="foot">每 10 分钟自动刷新　·　10:30</div>
 </div>
 <div class="tabbar" id="bar">
-  <a class="" href="/">天气</a><a class="cur" href="/status">主机</a>
+  <a class="" href="../">天气</a><a class="cur" href="./">主机</a>
 </div>
 <script>
 (function () {
   // Kindle 设备时钟常年不准（常见是停在 UTC），所以不以设备时间为准：
   // 用服务端渲染时刻做基准，之后用毫秒差自行走字，每次页面自刷新都会重新校准。
-  var SERVER_MS = 1794277630759;   // 服务端 epoch(ms)
+  var SERVER_MS = 1794277815588;   // 服务端 epoch(ms)
   var TZ_OFF = 8;         // 显示时区偏移（小时，如 8）
   var OFFSET = SERVER_MS - (new Date()).getTime();
   var bar = document.getElementById('bar');
