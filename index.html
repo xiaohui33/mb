@@ -54,7 +54,7 @@
 <body>
 <div id="main">
 
-<div class="clock" id="clock">17:30</div><div class="date" id="date">2026年11月10日 周二</div>
+<div class="clock" id="clock">17:40</div><div class="date" id="date">2026年11月10日 周二</div>
 <table class="hero"><tr>
   <td style="width:230px">
     <div class="big">12<span class="deg">°</span></div>
@@ -77,7 +77,7 @@
 <tr><td class='wd'>11/11 周三</td><td>阴</td><td class='r'>6° / 18°</td><td class='r'>0%</td></tr><tr><td class='wd'>11/12 周四</td><td>毛毛雨</td><td class='r'>10° / 18°</td><td class='r'>14%</td></tr><tr><td class='wd'>11/13 周五</td><td>小雨</td><td class='r'>13° / 18°</td><td class='r'>63%</td></tr>
 </table>
 
-<div class="foot">每 10 分钟自动刷新　·　17:30</div>
+<div class="foot">每 10 分钟自动刷新　·　17:40</div>
 </div>
 <div class="tabbar" id="bar">
   <a class="cur" href="./">天气</a><a class="" href="status/">主机</a>
@@ -86,7 +86,7 @@
 (function () {
   // Kindle 设备时钟常年不准（常见是停在 UTC），所以不以设备时间为准：
   // 用服务端渲染时刻做基准，之后用毫秒差自行走字，每次页面自刷新都会重新校准。
-  var SERVER_MS = 1794303017060;   // 服务端 epoch(ms)
+  var SERVER_MS = 1794303622161;   // 服务端 epoch(ms)
   var TZ_OFF = 8;         // 显示时区偏移（小时，如 8）
   var OFFSET = SERVER_MS - (new Date()).getTime();
   var bar = document.getElementById('bar');
