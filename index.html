@@ -86,7 +86,7 @@
 (function () {
   // Kindle 设备时钟常年不准（常见是停在 UTC），所以不以设备时间为准：
   // 用服务端渲染时刻做基准，之后用毫秒差自行走字，每次页面自刷新都会重新校准。
-  var SERVER_MS = 1794924184942;   // 服务端 epoch(ms)
+  var SERVER_MS = 1794924225705;   // 服务端 epoch(ms)
   var TZ_OFF = 8;         // 显示时区偏移（小时，如 8）
   var OFFSET = SERVER_MS - (new Date()).getTime();
   var bar = document.getElementById('bar');
