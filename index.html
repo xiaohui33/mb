@@ -54,7 +54,7 @@
 <body>
 <div id="main">
 
-<div class="clock" id="clock">08:45</div><div class="date" id="date">2026年11月26日 周四</div>
+<div class="clock" id="clock">08:55</div><div class="date" id="date">2026年11月26日 周四</div>
 <table class="hero"><tr>
   <td style="width:230px">
     <div class="big">11<span class="deg">°</span></div>
@@ -62,22 +62,22 @@
   <td>
     <div class="cond">晴</div>
     <div class="sub">10° 体感</div>
-    <div class="sub">湿度 80%</div>
+    <div class="sub">湿度 79%</div>
   </td>
 </tr></table>
 <div class="rule"></div>
 <div class="line">今日 <b>6° ~ 19°</b></div>
-<div class="line">西北风 2 km/h　·　雨 7%</div>
+<div class="line">西风 3 km/h　·　雨 7%</div>
 <div class="thin"></div>
 <div class="line">06:53 日出　·　17:28 日落</div>
 <div class="rule"></div>
 <h2>未来三天</h2>
 <table class="fc">
 <tr><th>日期</th><th>天气</th><th class="r">低 / 高</th><th class="r">雨</th></tr>
-<tr><td class='wd'>11/27 周五</td><td>晴</td><td class='r'>8° / 22°</td><td class='r'>0%</td></tr><tr><td class='wd'>11/28 周六</td><td>晴</td><td class='r'>8° / 23°</td><td class='r'>0%</td></tr><tr><td class='wd'>11/29 周日</td><td>晴</td><td class='r'>7° / 21°</td><td class='r'>0%</td></tr>
+<tr><td class='wd'>11/27 周五</td><td>晴</td><td class='r'>7° / 22°</td><td class='r'>0%</td></tr><tr><td class='wd'>11/28 周六</td><td>晴</td><td class='r'>8° / 23°</td><td class='r'>0%</td></tr><tr><td class='wd'>11/29 周日</td><td>晴</td><td class='r'>7° / 21°</td><td class='r'>0%</td></tr>
 </table>
 
-<div class="foot">每 10 分钟自动刷新　·　08:45</div>
+<div class="foot">每 10 分钟自动刷新　·　08:55</div>
 </div>
 <div class="tabbar" id="bar">
   <a class="cur" href="./">天气</a><a class="" href="status/">主机</a>
@@ -86,7 +86,7 @@
 (function () {
   // Kindle 设备时钟常年不准（常见是停在 UTC），所以不以设备时间为准：
   // 用服务端渲染时刻做基准，之后用毫秒差自行走字，每次页面自刷新都会重新校准。
-  var SERVER_MS = 1795653934284;   // 服务端 epoch(ms)
+  var SERVER_MS = 1795654539208;   // 服务端 epoch(ms)
   var TZ_OFF = 8;         // 显示时区偏移（小时，如 8）
   var OFFSET = SERVER_MS - (new Date()).getTime();
   var bar = document.getElementById('bar');
